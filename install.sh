@@ -42,9 +42,12 @@ sudo pacman -S --needed --noconfirm \
   kitty \
   jq \
   zsh \
-  fzf
+  fzf \
+  nautilus \
+  firefox \
+  kdeconnect
 
-yay -S --needed --noconfirm swaylock-effects-git
+yay -S --needed --noconfirm swaylock-effects-git visual-studio-code-bin 
 
 sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 
@@ -71,6 +74,10 @@ done
 
 # --- 4. Buat folder screenshot jika belum ada ---
 mkdir -p ~/Pictures/Screenshots
+
+mkdir -p ~/Pictures/Wallpapers
+cp -r ./wallpapers ~/Pictures/Wallpapers
+
 sudo cp -r ./font/* /usr/share/fonts
 echo "✅ Selesai! Nikmati hari mu :D"
 
