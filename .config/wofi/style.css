@@ -1,0 +1,59 @@
+* {
+  font-family: Maple Mono;
+  font-size: 14px;
+  background-color: transparent;
+  color: #c0caf5; /* fg */
+}
+
+/* Main window */
+window {
+  background-color: #1a1b26; /* bg */
+  border: 2px solid #414868; /* border */
+  border-radius: 12px;
+  padding: 8px;
+}
+
+/* Search input */
+#input {
+  margin: 8px;
+  padding: 10px;
+  background-color: #1f2335; /* bg_alt */
+  color: #c0caf5; /* fg */
+  border: none;
+  border-radius: 8px;
+  border-bottom: 2px solid #7aa2f7; /* blue */
+}
+
+/* Search input focus */
+#input:focus {
+  background-color: #1f2335;
+  border-color: #7dcfff; /* cyan */
+}
+
+/* Each item in the menu */
+#entry {
+  padding: 8px 12px;
+  margin: 6px;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #c0caf5;
+}
+
+/* Hovered or selected item */
+#entry:selected {
+  background-color: #7aa2f7; /* blue */
+  color: #1a1b26; /* bg */
+  font-weight: bold;
+  outline: none;
+}
+
+/* Container box */
+#outer-box {
+  padding: 8px;
+}
+
+/* Scroll bar if needed */
+#scroll {
+  margin: 4px;
+}
+

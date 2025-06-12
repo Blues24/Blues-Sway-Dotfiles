@@ -1,0 +1,27 @@
+mpd_music_dir = "/home/blues/Music"
+mpd_host      = "localhost"
+mpd_port      = "6600"
+
+# Interface
+#song_list_format = "{$7%a - } {$5%t} $R{$3%b}"
+song_list_format = "{%a - %t}|{$2▶ $b%a - %t$/b}$R{$6%b}"
+song_status_format = "$b$5%t$8 by$7 %a$8in$6 %b"
+
+
+# Themes
+colors_enabled = yes
+main_window_color       = blue
+progressbar_color       = cyan
+statusbar_color         = white
+volume_color            = yellow
+state_line_color        = magenta
+state_flags_color       = red
+header_window_color     = blue
+window_border_color     = blue
+
+# Visualizer
+visualizer_data_source = /tmp/mpd.fifo
+visualizer_output_name = visualizer
+visualizer_type = spectrum
+visualizer_in_stereo = yes
+visualizer_look = ●▮

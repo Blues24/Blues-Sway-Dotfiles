@@ -1,0 +1,8 @@
+[
+  { "label": "Lock",    "action": "~/.config/sway/scripts/lock.sh", "id": "lock" },
+  { "label": "Logout",  "action": "swaymsg exit",                   "id": "logout" },
+  { "label": "Suspend", "action": "systemctl suspend",              "id": "suspend" },
+  { "label": "Shutdown","action": "shutdown -P now",             "id": "shutdown" },
+  { "label": "Reboot",  "action": "reboot",               "id": "reboot" }
+]
+

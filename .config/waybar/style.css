@@ -1,0 +1,102 @@
+* {
+  font-family: Maple Mono;
+  border-radius: 8px;
+  font-size: 14px;
+  padding: 0px;
+  background: transparent;
+  color: #c0caf5; /* Foreground (fg) */
+}
+
+window#waybar {
+  background-color: #1a1b26; /* bg */
+  border-radius: 14px;
+  padding: 0px;
+  border-style: none;
+}
+
+#battery,
+#network,
+#clock,
+#custom-applauncher,
+#tray,
+#workspaces,
+#pulseaudio {
+  background-color: #1f2335; /* bg_alt */
+  margin: 6px;
+  margin-right: 0px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  color: #c0caf5;
+  border-style: none;
+  transition-duration: 120ms;
+}
+
+#clock {
+  margin-right: 6px;
+}
+
+#pulseaudio:hover,
+#custom-applauncher:hover {
+  background-color: #7aa2f7; /* blue */
+  color: #1a1b26; /* bg */
+  transition-duration: 120ms;
+}
+
+#custom-applauncher {
+  font-weight: bold;
+  transition-duration: 120ms;
+}
+
+#tray menu {
+  background-color: #1a1b26;
+  color: #c0caf5;
+  padding: 4px;
+}
+#tray menu menuitem {
+  background-color: #1f2335;
+  margin: 3px;
+  color: #c0caf5;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: #1f2335;
+}
+#tray menu menuitem:hover {
+  background-color: #1f2335;
+  color: #bb9af7; /* magenta */
+  font-weight: bold;
+}
+
+#workspaces button {
+  transition-duration: 100ms;
+  all: initial;
+  min-width: 0;
+  font-weight: bold;
+  color: #c0caf5;
+  margin-right: 0.2cm;
+  margin-left: 0.2cm;
+}
+
+#workspaces button:hover {
+  transition-duration: 120ms;
+  color: #bb9af7; /* magenta */
+}
+#workspaces button.focused,
+#workspaces button.active {
+  color: #7aa2f7; /* blue */
+  font-weight: bold;
+}
+#workspaces button.urgent {
+  color: #f7768e; /* red */
+}
+
+#battery {
+  background-color: #1f2335;
+  color: #c0caf5;
+}
+#battery.warning,
+#battery.critical,
+#battery.urgent {
+  color: #1a1b26;
+  background-color: #f7768e; /* red */
+}
+
